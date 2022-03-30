@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">
+            NTLAM 's Site
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Du lịch<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cần Thơ</a></li>
+              <li><a href="#">Sài Gòn</a></li>
+              <li><a href="#">Trà Vinh</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/register.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+          <li class="active"><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Login form -->
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 bg-success login-form">
+        <h1 class="text-center panel-heading">Đăng nhập</h2>  
+        <form class="form-horizontal">  
+            <div class="form-group"> <label class="control-label col-md-2" for="email">Email</label>  
+                <div class="col-md-8"> <input type="email" class="form-control" id="email" placeholder="Nhập email"> </div>  
+            </div>  
+            <div class="form-group"> <label class="control-label col-md-2" for="pwd">Mật khẩu</label>  
+                <div class="col-md-8"> <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu"> </div>  
+            </div>  
+            <div class="form-group">  
+                <div class="col-md-offset-2 col-md-10">  
+                    <div class="checkbox"> <label><input type="checkbox"> Duy trì đăng nhập</label> </div>  
+                </div>  
+            </div>  
+            <div class="form-group">  
+                <div class="col-md-offset-1 col-md-10"> <button type="submit" class="btn btn-primary">Xác nhận</button> </div>  
+            </div>  
+        </form>  
+        <hr class="rounded">
+        <div class="col">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Đăng nhập bằng Facebook
+           </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Đăng nhập bằng Twitter
+          </a>
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Đăng nhập bằng Google+
+          </a>
+        </div>
+      </div>
+    </div>  
+  </body>
+</html>
